@@ -1,0 +1,73 @@
+﻿@model IEnumerable<facebook1.Models.ModelClass1>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2></h2>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="~/content/stylesheet/StyleSheet1.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" type="text/css" href="../../Content/StyleSheet1.css" />
+    <script src="../../Scripts/valdatas.js" type="text/javascript"></script>-->
+</head>
+<body>
+    @{using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div style="background-color: #3b5998;height:80px;">
+            <img src="~/content/imgs/facebooklogo.png " style="margin-left: 80px; width:220px;height:80px;" /><input type="text" name="X_emailaddress" style="margin-left:550px;margin-top:-50px;" /> @{Html.TextBox("X_emailaddress");}   <input type="password" name="X_paswrd" class="password" />@{Html.TextBox("X_paswrd");} <!--<input type="submit" name="login" value="Login" onclick="return login_click()"/>-->
+            <input id="login" type="submit" value="Login" name="cmd" /><br /><input style="margin-left: 850px; margin-top:-20px;" type="checkbox" checked />Keep me logged in
+        </div>
+
+        <table>
+            <tr>
+                <td align=left valign=top>
+                    <table>
+                        <tr>
+                            <td>
+                                <h3 id="connec"><font face="verdana">Facebook helps you connect and share with the<br /> people in your life.</font></h3>
+
+                                <img src="~/content/imgs/facebookmap.jpg" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td valign="top">
+                                <h3 id="hdding">Create an account<br /></h3><h3>It's free and always will be.</h3><input type="text" id="fname" name="X_frstname" placeholder="FirstName" onfocusout="validateFstnme()" onclick="validateFstnme1()" />@{Html.TextBox("X_frstname");}  <input type="text" id="lname" placeholder="Sur Name" name="X_srname" onfocusout="validateSecnme()" onclick="validateSecnme1()" />@{Html.TextBox("X_Lastname");}
+                                <br /><br /><input type="text" id="emal" placeholder="Mobile Number or Email-id" name="X_emailadress">@{Html.TextBox("X_emailadress");}
+                                <br /><br /><input type="text" id="emid" placeholder="Reenter Mobile Number or Email-id">
+                                <br /><br /><input type="password" id="paswrd" name="X_pawrd" placeholder="New Password">@{Html.TextBox("X_pawrd");}
+                                <br /><br /><input type="text" readonly name="proflepic" id="myFile" style="height:30px; width:290px;margin-top:-5px;" />@{Html.TextBox("proflepic");}<input class="btn-success glyphicon-globe" type="button" value="Browse.." style="height:30px; width:100px;margin-top:5px;margin-left:1px;" /><input style="height:50px; width:100px;margin-top:-40px;margin-left:295px;opacity:0;" type="file" accept="image/png" name="img1" id="img1" onchange="document.getElementById('myFile').value = this.value" />
+                                <br /><br /><p id="bday">Birthday</p>
+                                <br /><select id="DropDownList1" name="X_day">
+                                    <option>10</option>
+
+                                </select>@{Html.TextBox("X_day");}
+                                <select id="DropDownList2" name="X_month">
+                                    <option>11</option>
+                                </select>@{Html.TextBox("X_month");}
+                                <select id="DropDownList3" name="X_year">
+                                    <option>2000</option>
+                                </select>@{Html.TextBox("X_year");}<a href="#" id="whyDo">Why do I need to provide my date of birth?</a>
+                                <br /><input type=radio id="RadioButton1" name="X_gendr" />Female @{Html.TextBox("X_gendr");}<input type=radio id="RadioButton2" name="X_gendr" />Male@{Html.TextBox("X_gendr");}
+                                <br /><p id="byclck">By clicking Create an account, you agree to our Terms and that you have read our Data Policy, <br />including our Cookie Use.</p>
+                                <br /><input type=submit id="Btnsignlst" value="create an account" name="cmd" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    }}
+
+</body>
+</html>
+

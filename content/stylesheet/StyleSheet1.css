@@ -1,0 +1,197 @@
+﻿<style type="text/css">
+        .style1
+        {
+            width: 57%;
+        }
+        #connec
+        {
+         
+         margin-left:100px;
+        }
+        #btnsignup
+        {
+          margin-left:50px;
+          } 
+          #fbmap
+          {
+              margin-left:100px;
+          }
+          #fname
+          {
+              border-radius: 4px;
+              height:30px;
+              margin-left:-10px;
+              font-size:large;
+              width:190px;
+              
+          }
+          #lname
+          {
+              border-radius: 4px;
+              height:30px;
+              margin-left:10px;
+              font-size:large;
+              width:190px;
+              
+          }
+          #emal
+          {
+              border-radius: 4px;
+              height:30px;
+              margin-left:-10px;
+              font-size:large;
+              width:400px;
+              
+          }
+          #emid
+          {
+              border-radius: 4px;
+              height:30px;
+              margin-left:-10px;
+              font-size:large;
+              width:400px;
+              
+          }
+           #paswrd
+          {
+              border-radius: 4px;
+              height:30px;
+              margin-left:-10px;
+              font-size:large;
+              width:400px;
+              
+          }
+          #myFile
+          {
+              border-radius: 4px;
+              height:30px;
+              margin-left:-10px;
+              font-size:large;
+            
+              max-width:800px;
+              
+          }
+          #bday
+          {
+              
+              margin-top:auto;
+              margin-left:-10px;
+              font-size:large;
+              font-family:Calibri;
+            
+              
+          }
+          #RadioButton1
+          {
+             
+              font-size:large;
+              font-family:Calibri;
+             
+              
+          }
+          #RadioButton2
+          {
+              
+              font-size:large;
+              font-family:Calibri;
+             
+              
+          }
+           #DropDownList1
+          {
+              border-radius: 4px;
+              height:30px;
+             
+              margin-left:-10px;
+              font-size:large;
+              font-family:Calibri;
+             width:70px;
+              
+          }
+          #DropDownList2
+          {
+              border-radius: 4px;
+              height:30px;
+              margin-left:0px;
+              font-size:large;
+              font-family:Calibri;
+             width:90px;
+              
+          }
+          #DropDownList3
+          {
+              border-radius: 4px;
+              height:30px;
+              
+              margin-left:0px;
+              font-size:large;
+              font-family:Calibri;
+             width:90px;
+              
+          }
+           #whyDo
+          {
+             
+              
+              margin-left:0px;
+              font-size:small;
+              font-family:Calibri;
+           
+              
+          }
+          #byclck
+          {
+              
+              margin-top:auto;
+              margin-left:-10px;
+              font-size:x-small;
+              font-family:Calibri;
+             
+              
+          }
+          #Btnsignlst
+          {
+             border-radius: 8px;
+              background-color: #4CAF50;
+              height:50px;
+  
+    color: white;
+   
+    text-align: center;
+    text-decoration: none;
+   
+    font-size: 16px;
+   
+    cursor: pointer; 
+          }
+          
+          .image-preview-input {
+    position: relative;
+	overflow: hidden;
+	margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+  #hdding
+  {
+
+      margin-left:50px;margin-top:60px;
+  }
+        
+    </style>
+
